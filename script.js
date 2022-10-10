@@ -18,7 +18,7 @@ function generateGrid() {
     }
     
     else {
-        for (let i = 0; i <= (2 * XandYNum); i++){
+        for (let i = 0; i < (XandYNum * XandYNum); i++){
             cloneEtchDiv = etchDiv.cloneNode();
             container.appendChild(cloneEtchDiv);
             
