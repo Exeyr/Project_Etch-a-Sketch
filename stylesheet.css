@@ -1,0 +1,33 @@
+@viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+  } 
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 24px;
+    background-color: #e5debe;
+    color: black;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#container {
+    display: flexbox;
+    background-color: white;
+    min-width: 600px;
+    min-height: 600px;
+}
+
+#etchDiv {
+    background-color: purple;
+    max-width: 20px;
+    max-height: 20px;
+    width: 20px;
+    height: 20px;
+    display: flexbox;
+}
