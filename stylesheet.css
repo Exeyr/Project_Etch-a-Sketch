@@ -28,28 +28,15 @@ body {
     background-color: gray;
 }
 
-#etchDiv {
+.etchDiv {
     background-color: white;
-    display: flex;
-    min-width: 20px;
-    min-height: 20px;
-    flex-grow: 1;
-    padding: none;
-    margin: none;
     border: 1px solid black;
 }
 
-#button {
+button {
     min-width: 100px;
     min-height: 50px;
-}
-
-.etchDivHover {
-    background-color: black;
-    width: 20px;
-    height: 20px;
-    display: flex;
-    padding: none;
-    margin: none;
-    border: 1px solid black;
+    background-color: royalblue;
+    outline: none;
+    margin-top: 40px;
 }
