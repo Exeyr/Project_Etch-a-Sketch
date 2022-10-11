@@ -17,7 +17,7 @@ body {
 }
 
 #container {
-    margin-top: 50px;
+    margin-top: 20px;
     display: inline-grid;
     grid-template-columns: repeat(16, 2fr);
     grid-template-rows: repeat(16, 2fr);
@@ -26,6 +26,11 @@ body {
     height: 600px;
     width: 600px;
     background-color: gray;
+    color: black; 
+    box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.6),
+    2px 2px 5px rgba(0, 0, 0, 0.5),
+    inset -2px -2px 5px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .etchDiv {
@@ -34,9 +39,27 @@ body {
 }
 
 button {
+    margin: 10px;
+    margin-top: 20px;
+    max-width: 500px;
+    width: 100%;
     min-width: 100px;
-    min-height: 50px;
-    background-color: royalblue;
-    outline: none;
-    margin-top: 40px;
+    height: 60px;
+    border-radius: 20px;
+    font-size: large;
+    font-weight: 600;
+    background-color: #54BAB9;
+    box-shadow: 0 5px 0 #49a2a3;
+    border: none;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+button:active {
+    box-shadow: none;
+    transform: translateY(5px);
+    transition: all.1s;
 }
