@@ -2,6 +2,7 @@ const container = document.querySelector('#container');
 
 const etchDiv = document.createElement('div');
     etchDiv.setAttribute('id', 'etchDiv');
+      
 
 const etchContainer = document.createElement('div');
     etchContainer.setAttribute('id', 'etchContainer');
@@ -47,5 +48,8 @@ function createItems() {
     for (let i = 0; i < XandYNum; i++) {
         cloneEtchDiv = etchDiv.cloneNode();
         cloneEtchContainer.appendChild(cloneEtchDiv);
+        clonEtchDiv.addEventListener('mouseover', function(event){
+            event.target.style.backgroundColor = 'black';
+        }); 
     }
 }

@@ -17,23 +17,23 @@ body {
 }
 
 #container {
-    display: inline-flex;
-    background-color: white;
-    max-width: 600px;
-    max-height: 600px;
-    flex-wrap: wrap;
-    width: fit-content;
-    height: fit-content;
-    justify-content: baseline;
-    align-items: baseline;
-   
+    margin-top: 50px;
+    display: inline-grid;
+    grid-template-columns: repeat(16, 2fr);
+    grid-template-rows: repeat(16, 2fr);
+    border: 5px solid white;
+    border-radius: 5px;
+    height: 600px;
+    width: 600px;
+    background-color: gray;
 }
 
 #etchDiv {
-    background-color: purple;
-    width: 20px;
-    height: 20px;
+    background-color: white;
     display: flex;
+    min-width: 20px;
+    min-height: 20px;
+    flex-grow: 1;
     padding: none;
     margin: none;
     border: 1px solid black;
@@ -42,4 +42,14 @@ body {
 #button {
     min-width: 100px;
     min-height: 50px;
+}
+
+.etchDivHover {
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    padding: none;
+    margin: none;
+    border: 1px solid black;
 }
